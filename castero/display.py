@@ -762,6 +762,7 @@ class Display:
         # update the header text
         max_width = self._header_window.getmaxyx()[1]
         #header_str = "%s " % castero.__title__
+        header_str = " "
         stats_str = "[%d%%]" % self._queue.volume
         if self._queue.first is not None:
             state = self._queue.first.state
