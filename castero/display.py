@@ -133,7 +133,7 @@ class Display:
         )
         curses.init_pair(
             2,
-            self.color_number(Config["color_background"]),
+            self.color_number(if Config["color_background"] != COLOR_NAMES['transparent']: Config["color_background"] else: COLOR_NAMES['black']),
             self.color_number(Config["color_foreground"]),
         )
         curses.init_pair(
